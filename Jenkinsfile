@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('building master bracnh') {
             when {
-                buildingTag()
+                tag "2.0"
             }
             steps {
                 echo 'building with tag by me'
